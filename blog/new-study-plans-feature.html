@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>New Study Plans Feature in StudyBreak: AI-Powered Study Planning | KC Okolo</title>
+  <meta name="title" content="New Study Plans Feature in StudyBreak: AI-Powered Study Planning | KC Okolo">
+  <meta name="description" content="Discover how StudyBreak's new Study Plans feature uses AI to create personalized study schedules. Learn about custom study duration, scheduling, and syllabus imports.">
+  <meta name="author" content="KC Okolo">
+  <meta name="keywords" content="StudyBreak app, study planning, AI study plans, student productivity, study schedule, education technology, KC Okolo, study management, syllabus import">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kenech.io/blog/new-study-plans-feature">
+  <meta property="og:title" content="New Study Plans Feature in StudyBreak: AI-Powered Study Planning">
+  <meta property="og:description" content="Discover how StudyBreak's new Study Plans feature uses AI to create personalized study schedules. Learn about custom study duration, scheduling, and syllabus imports.">
+  <meta property="og:image" content="https://kenech.io/assets/images/blog_posts/studying_or_working_illustration2.png">
+  <meta property="article:published_time" content="2024-12-13">
+  <meta property="article:author" content="KC Okolo">
+  <meta property="article:section" content="App Updates">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kenech.io/blog/new-study-plans-feature">
+  <meta property="twitter:title" content="New Study Plans Feature in StudyBreak: AI-Powered Study Planning">
+  <meta property="twitter:description" content="Discover how StudyBreak's new Study Plans feature uses AI to create personalized study schedules. Learn about custom study duration, scheduling, and syllabus imports.">
+  <meta property="twitter:image" content="https://kenech.io/assets/images/blog_posts/studying_or_working_illustration2.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kenech.io/blog/new-study-plans-feature">
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "New Study Plans Feature in StudyBreak: AI-Powered Study Planning",
+      "image": "https://kenech.io/assets/images/blog_posts/studying_or_working_illustration2.png",
+      "datePublished": "2024-12-13",
+      "dateModified": "2024-12-13",
+      "author": {
+        "@type": "Person",
+        "name": "KC Okolo",
+        "url": "https://kenech.io"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "KC Okolo",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kenech.io/assets/images/logo.png"
+        }
+      },
+      "description": "Discover how StudyBreak's new Study Plans feature uses AI to create personalized study schedules. Learn about custom study duration, scheduling, and syllabus imports.",
+      "articleSection": "App Updates",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kenech.io/blog/study-plans-feature"
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Colors */
+      --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+      --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+      --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
+      --bg-gradient-yellow-2: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+      --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+      --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+
+      --jet: hsl(0, 0%, 22%);
+      --onyx: hsl(240, 1%, 17%);
+      --eerie-black-1: hsl(240, 2%, 13%);
+      --eerie-black-2: hsl(240, 2%, 12%);
+      --smoky-black: hsl(0, 0%, 7%);
+      --white-1: hsl(0, 0%, 100%);
+      --white-2: hsl(0, 0%, 98%);
+      --orange-yellow-crayola: hsl(45, 100%, 72%);
+      --vegas-gold: hsl(45, 54%, 58%);
+      --light-gray: hsl(0, 0%, 84%);
+      --light-gray-70: hsla(0, 0%, 84%, 0.7);
+      --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+      /* Typography */
+      --ff-poppins: 'Poppins', sans-serif;
+      --fs-1: 24px;
+      --fs-2: 18px;
+      --fs-3: 17px;
+      --fs-4: 16px;
+      --fs-5: 15px;
+      --fs-6: 14px;
+      --fs-7: 13px;
+      --fs-8: 11px;
+      --fw-300: 300;
+      --fw-400: 400;
+      --fw-500: 500;
+      --fw-600: 600;
+
+      /* Shadow */
+      --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+      --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+      --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+      --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+      --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+    }
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--smoky-black);
+      color: var(--light-gray);
+      font-family: var(--ff-poppins);
+      padding: 15px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blog-post-container {
+      background: var(--eerie-black-2);
+      border: 1px solid var(--jet);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 800px;
+      width: 100%;
+      margin: 20px;
+      box-shadow: var(--shadow-5);
+    }
+
+    .blog-post-image {
+      width: 100%;
+      height: 500px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      background: var(--bg-gradient-onyx);
+    }
+
+    .blog-post-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blog-post-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 15px;
+    }
+
+    .blog-post-meta .category {
+      color: var(--light-gray-70);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-300);
+    }
+
+    .blog-post-meta .dot {
+      background: var(--light-gray-70);
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+    }
+
+    .blog-post-meta time {
+      color: var(--light-gray-70);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-300);
+    }
+
+    .blog-post-title {
+      color: var(--white-2);
+      font-size: var(--fs-1);
+      font-weight: var(--fw-600);
+      line-height: 1.3;
+      margin-bottom: 25px;
+    }
+
+    .blog-post-content {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-300);
+      line-height: 1.6;
+    }
+
+    .blog-post-content p {
+      margin-bottom: 20px;
+    }
+
+    .back-to-blog {
+      display: inline-block;
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-500);
+      margin-top: 30px;
+      text-decoration: none;
+    }
+
+    .back-to-blog:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 580px) {
+      .blog-post-container {
+        padding: 20px;
+        margin: 15px;
+      }
+
+      .blog-post-image {
+        height: 300px;
+      }
+
+      .blog-post-title {
+        font-size: var(--fs-2);
+      }
+    }
+
+    .media-container {
+      width: 100%;
+      margin-bottom: 25px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--bg-gradient-onyx);
+    }
+
+    /* For images */
+    .media-container.image {
+      height: 400px;
+    }
+
+    .media-container.image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* For videos */
+    .media-container.video {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+    }
+
+    .media-container.video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 580px) {
+      .media-container.image {
+        height: 300px;
+      }
+    }
+
+    .blog-post-content ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .blog-post-content li {
+      margin-bottom: 8px;
+    }
+
+    .blog-post-content strong {
+      color: var(--white-2);
+    }
+
+    .screenshot-label {
+      color: var(--vegas-gold);
+      font-style: italic;
+      text-align: center;
+      margin: 20px 0;
+      font-size: var(--fs-7);
+    }
+
+    .screenshots-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 25px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .screenshot-wrapper {
+      flex: 0 1 auto;
+      max-width: 45%;
+    }
+
+    .screenshot-wrapper img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 580px) {
+      .screenshots-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .screenshot-wrapper {
+        max-width: 100%;
+      }
+    }
+
+  </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81XHFV18SM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-81XHFV18SM', {
+    'anonymize_ip': true,
+    'cookie_flags': 'SameSite=None;Secure',
+    'page_title': 'New Study Plans Feature in StudyBreak'
+  });
+</script>
+
+</head>
+
+<body>
+  <main>
+    <div class="blog-post-container">
+      <article class="blog-post">
+        <figure class="blog-post-image">
+          <img src="images/studying_or_working_illustration2.png" alt="article main image">
+        </figure>
+
+        <div class="blog-post-meta">
+          <p class="category">App Updates</p>
+          <span class="dot"></span>
+          <time datetime="2024-12-13">December 13, 2024</time>
+        </div>
+
+        <h1 class="blog-post-title">New Study Plans Feature in StudyBreak</h1>
+
+        <div class="blog-post-content">
+          <p>
+            How much should I study? And when? 
+          </p>
+          <p>
+            If you've ever been a student, you've probably wondered about the best way to study. For each of us, the answer likely varies, shaped by the unique combination of courses we're taking and our individual circumstances—what we're studying for and why. But what about those who haven't found their answer? What's their solution?
+          </p>
+
+          <p>
+            The answer depends on two critical factors: content (what you're studying) and context (why you're studying and for what purpose). Even with these factors clearly defined, the right approach still differs from person to person because everyone has unique needs. One size doesn't fit all. While general recommendations provide a helpful starting point, there's always room for customization to find what works best for each student.
+          </p>
+
+          <p>
+            That's why I developed the Study Plans feature for my app, StudyBreak. This feature aims to tackle these challenges head-on. The goal? To streamline the studying process, helping students maximize their time spent on learning while minimizing time spent on administrative tasks. While tasks like planning are valuable, they can detract from the time and energy students need to focus on their subjects. The focus of StudyBreak is clear: to help students excel in their exams and assignments.
+          </p>
+
+          <h2 class="blog-post-title">How Study Plans Work</h2>
+
+          <div class="screenshots-container">
+            <div class="screenshot-wrapper">
+              <img src="images/import_syllabus_button_screenshot.PNG" alt="Import syllabus button interface">
+            </div>
+            <div class="screenshot-wrapper">
+              <img src="images/study_plan_form_screenshot.PNG" alt="Study plan form interface">
+            </div>
+          </div>
+          
+
+          <p>
+            Students can find the feature in the Notebook tab of the app by tapping Study Plans at the top of the screen. From there, a simple tap on the "+" button in the toolbar opens the Study Plan Form.
+          </p>
+
+          <p>
+            The quickest way to generate a study plan is to import a syllabus as a PDF (or copy and paste its content) and hit Create. In about 30 seconds, the app generates a tailored study plan for the student.
+          </p>
+
+          <p>
+            For those who prefer more control, the app offers customizable settings, including:
+          </p>
+
+          <ul>
+            <li>Study duration</li>
+            <li>Maximum daily study hours</li>
+            <li>Days of study</li>
+            <li>Grade level</li>
+            <li>Goals and additional topics of interest</li>
+          </ul>
+
+          <div class="screenshots-container">
+            <div class="screenshot-wrapper">
+              <img src="images/study_plan_screenshot.PNG" alt="study plan page">
+            </div>
+          </div>
+
+          <h2 class="blog-post-title">Features for Seamless Organization</h2>
+
+          <p>
+            Once the study plan is created, users can:
+          </p>
+
+          <ul>
+            <li>Save the plan</li>
+            <li>Generate calendar events with alerts for every study session</li>
+          </ul>
+
+          <p>
+            This flexibility is perfect for students who need a structured starting point but might prefer to use other tools to manage their schedule further.
+          </p>
+
+          <p>
+            The study plans themselves are intentionally not overly detailed, a decision rooted in the current limitations of AI. While AI is powerful and generally reliable, it isn't perfect, and hallucinations (errors in generated content) can occur.
+          </p>
+
+          <div class="screenshots-container">
+            <div class="screenshot-wrapper">
+              <img src="images/create_notes.PNG" alt="Create Notes button">
+            </div>
+            <div class="screenshot-wrapper">
+              <img src="images/activity_overview_view_screenshot.PNG" alt="Activity overview">
+            </div>
+          </div>
+
+          <h2 class="blog-post-title">The Challenges and Limitations</h2>
+
+          <p>
+            Building this feature came with its own set of challenges. Balancing customization with simplicity was no easy feat. Designing a tool flexible enough to cater to diverse student needs while ensuring it remains user-friendly required countless iterations.
+          </p>
+
+          <p>
+            Another hurdle was ensuring the responsible use of AI. While AI excels at generating content quickly, its occasional inaccuracies make it essential to emphasize verification and critical thinking. As a result, features like the "Further Reading" section are integral to promoting responsible learning.
+          </p>
+
+          <p>
+            Additionally, technical constraints such as processing speed and compatibility with various syllabus formats added layers of complexity. These are areas I'll continue to refine based on user feedback.
+          </p>
+
+          <p>
+            Despite these challenges, I'm thrilled to share this tool with students and look forward to hearing how it helps them tackle their study goals.
+          </p>
+
+          <p>
+            If you enjoyed this post and would like to connect you can find me on <a href="https://www.linkedin.com/in/kc-okolo-64906ab4/" style="color: var(--orange-yellow-crayola);">LinkedIn</a> and <a href="https://www.instagram.com/kc0kolo/" style="color: var(--orange-yellow-crayola);">Instagram</a>, where I regularly share tips and insights for students.
+          </p>
+
+          <p>
+            Stay tuned for a future post where I'll dive deeper into the nitty gritty technical aspects of building a tool like this!
+          </p>
+
+          <p>
+            <a href="https://apps.apple.com/app/apple-store/id1020691962?pt=117875305&ct=Personal%20Blog&mt=8" style="color: var(--orange-yellow-crayola);">Download</a> StudyBreak Notebook 4.1.34 from the App Store today!
+          </p>
+        </div>
+
+        <a href="../index.html#blog" class="back-to-blog">← Back to Blog</a>
+      </article>
+    </div>
+  </main>
+</body>
+
+</html>
